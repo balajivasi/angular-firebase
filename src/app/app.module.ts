@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { config } from 'environments/firebaseEnveronment';
 import { TeluguComponent } from './telugu/telugu.component';
-import { TamilComponent } from './tamil/tamil.component';
+
 import { HindiComponent } from './hindi/hindi.component';
 import { MalayalamComponent } from './malayalam/malayalam.component'
 
@@ -22,7 +22,6 @@ import { Routing } from './app.routing'
   declarations:[ 
     AppComponent,
     TeluguComponent,
-    TamilComponent,
     HindiComponent,
     MalayalamComponent
   ],
