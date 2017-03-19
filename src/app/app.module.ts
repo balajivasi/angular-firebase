@@ -17,13 +17,16 @@ import { MalayalamComponent } from './malayalam/malayalam.component'
 
 import { Routing } from './app.routing'
 
+import { TeluguService } from './telugu/telugu.service';
+import { TelugudetailsComponent } from './telugu/telugudetails/telugudetails.component'
 
 @NgModule({
   declarations:[ 
     AppComponent,
     TeluguComponent,
     HindiComponent,
-    MalayalamComponent
+    MalayalamComponent,
+    TelugudetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,7 @@ import { Routing } from './app.routing'
     AngularFireModule.initializeApp(config),
     Routing
   ],
-  providers: [],
+  providers: [TeluguService],
   bootstrap: [AppComponent]
 })
 
